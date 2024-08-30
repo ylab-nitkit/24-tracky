@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ros/yolo_ws/src/image_pub/build/devel/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/ros/yolo_ws/src/image_pub/build/devel
+
+Name: image_pub
+Description: Description of image_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

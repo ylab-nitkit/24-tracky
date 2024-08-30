@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- ノードの起動 -->
+  <node name="t_webcam" pkg="image_pub" type="t_webcam.py" output="screen">
+    <!-- パラメータの設定 (任意) -->
+    <param name="param_name" value="param_value" />
+    <!-- トピックのリマッピング (任意) -->
+    <remap from="/old_topic" to="/new_topic" />
+  </node>
+</launch>
+

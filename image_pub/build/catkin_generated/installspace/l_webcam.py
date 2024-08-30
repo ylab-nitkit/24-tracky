@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+## coding: UTF-8
+
+import rospy
+from std_msgs.msg import String
+from geometry_msgs.msg import Twist
+
+def callback(message):
+    rospy.loginfo("[%s]", message.data) # ターミナルへの表示
+
+rospy.init_node('listener')
+sub = rospy.Subscriber('chatter', String, callback) # chatterというTopicを受信！受信したら上で定義したcallback関数を呼ぶ
+cmd_sub = rospy.Subscriber('/cmd_vel', Twist, callback)
+rospy.spin()
